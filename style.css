@@ -1,0 +1,121 @@
+:root {
+    --primary: #4285f4;
+    --danger: #ea4335;
+    --success: #34a853;
+    --warning: #fbbc05;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+h2 {
+    color: var(--primary);
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.2);
+}
+
+input::placeholder {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    transform: scale(0.98);
+    background-color: #3367d6;
+}
+
+#resultado {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.asistencia {
+    color: var(--success);
+    font-weight: bold;
+}
+
+.inasistencia {
+    color: var(--danger);
+    font-weight: bold;
+}
+
+.alerta {
+    color: var(--warning);
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff8e1;
+    border-left: 4px solid var(--warning);
+}
+
+@media (min-width: 400px) {
+    body {
+        padding: 30px;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
