@@ -28,5 +28,5 @@ function CalcularPorcentaje() {
     // Mostrar resultado (con 2 decimales)
     document.getElementById('resultado').innerHTML = 
         `El porcentaje de asistencia del alumno es de: ${porcentajeAsistencia.toFixed(2)}%<br>
-        El porcentaje de inasistencias del alumno es de: ${100 - porcentajeAsistencia.toFixed(2)}%`;
+        El porcentaje de inasistencias del alumno es de: ${(100 - porcentajeAsistencia).toFixed(2)}%`;
 }
