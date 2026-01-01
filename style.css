@@ -112,6 +112,14 @@ button:active {
     border-left: 4px solid var(--warning);
 }
 
+.lista-contactos a{
+    color: black;
+}
+
+.lista-contactos a:hover{
+    color: blue;
+}
+
 @media (min-width: 400px) {
     body {
         padding: 30px;
